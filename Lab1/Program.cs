@@ -19,9 +19,9 @@ namespace Lab1
                 string inputFilePath = args.Length > 0 ? args[0] : Path.Combine("Lab1", "INPUT.TXT");
                 string outputFilePath = Path.Combine("Lab1", "OUTPUT.TXT");
                 string[] value = File.ReadAllLines(inputFilePath);
-                string result = CalculateWays(value);
-
-                InputCheck(value);                
+                
+                InputCheck(value);
+                string result = CalculateWays(value);                              
                 File.WriteAllText(outputFilePath, result.Trim());
 
                 Console.WriteLine("File OUTPUT.TXT created");

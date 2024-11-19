@@ -7,6 +7,7 @@
     <Nullable>enable</Nullable>
 	  <PackAsTool>true</PackAsTool>
 	  <OutputType>Exe</OutputType>
+	  <Version>1.0.0</Version>
 	  <Authors>IvanetsPolina</Authors>
 	  <Description>Lab4</Description>
 	  <ToolCommandName>Lab4</ToolCommandName>

@@ -1,6 +1,6 @@
-﻿using System.Runtime.InteropServices;
+﻿using Lab4Lib;
 using McMaster.Extensions.CommandLineUtils;
-using Lab4Lib;
+using System.Runtime.InteropServices;
 
 namespace Lab4
 {

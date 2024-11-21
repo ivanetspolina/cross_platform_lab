@@ -1,10 +1,17 @@
 Vagrant.configure("2") do |config|
+
+  hosts = {
+  "ubuntu" => "192.168.0.105"
+  "windows" => "192.168.0.106"
+   #"mac" => "192.168.0.107"
+}
   
   # Визначення конфігурації для Ubuntu
   config.vm.define "ubuntu" do |ubuntu|
     ubuntu.vm.box = "bento/ubuntu-22.04"
     ubuntu.vm.hostname = "VagrantVM"
-    ubuntu.vm.network "private_network", ip: "192.168.67.26"
+    ubuntu.vm.network "forwarded_port", guest: 7292, host: 7292
+    ubuntu.vm.network "private_network", ip: "192.168.0.105"
     ubuntu.vm.provider "virtualbox" do |vb|
       vb.name = "VagrantVM"
       vb.gui = false

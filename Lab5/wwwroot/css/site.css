@@ -1,0 +1,29 @@
+html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+    padding: 20px;
+    margin-bottom: 60px;
+}
+
+.custom-left {
+    left: -80px !important;
+    top: 60px;
+    padding: 4px;
+}
+
+.custom-d {
+    top: 60px;
+}

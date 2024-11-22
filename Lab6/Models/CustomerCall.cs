@@ -22,5 +22,6 @@ namespace Lab6.Models
         public RefCallOutcome RefCallOutcome { get; set; }
         public RefCallStatusCode RefCallStatusCode { get; set; }
         public Staff Staff { get; set; }
+        public CommonSolution CommonSolution { get; set; }
     }
 }

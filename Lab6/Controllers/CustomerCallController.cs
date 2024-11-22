@@ -6,7 +6,7 @@ using Lab6.Data;
 
 namespace Lab6.Controllers
 {
-    //[Authorize]
+    [Authorize]
     [ApiController]
     [Route("api/[controller]")]
     public class CustomerCallController : Controller

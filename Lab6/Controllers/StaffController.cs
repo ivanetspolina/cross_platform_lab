@@ -6,7 +6,7 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace Lab6.Controllers
 {
-    //[Authorize]
+    [Authorize]
     [ApiController]
     [Route("api/[controller]")]
     public class StaffController : Controller

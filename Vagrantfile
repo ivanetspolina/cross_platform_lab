@@ -11,6 +11,7 @@ Vagrant.configure("2") do |config|
     ubuntu.vm.box = "bento/ubuntu-22.04"
     ubuntu.vm.hostname = "VagrantVM"
     ubuntu.vm.network "forwarded_port", guest: 7292, host: 7292
+    ubuntu.vm.network "forwarded_port", guest: 7154, host: 7154
     ubuntu.vm.network "private_network", ip: "192.168.0.105"
     ubuntu.vm.provider "virtualbox" do |vb|
       vb.name = "VagrantVM"
@@ -85,7 +86,7 @@ Vagrant.configure("2") do |config|
     windows.vm.network "forwarded_port", guest: 5050, host: 5052, auto_correct: true
     windows.vm.network "forwarded_port", guest: 5000, host: 5003, auto_correct: true
     windows.vm.network "forwarded_port", guest: 3389, host: 33389, auto_correct: true
-    windows.vm.network "forwarded_port", guest: 5985, host: 55985, auto_correct: true
+    windows.vm.network "forwarded_port", guest: 5081, host: 53183, auto_correct: true
     
     windows.winrm.username = "vagrant"
     windows.winrm.password = "vagrant"
